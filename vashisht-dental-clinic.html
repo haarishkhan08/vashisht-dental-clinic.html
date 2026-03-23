@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Vashisht Dental Clinic – Badarpur, New Delhi</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#1a5fb4;--blue-dark:#0d3d7a;--blue-light:#e8f0fd;--green:#2ec4a4;--green-light:#e6f9f5;--gray-50:#f8fafc;--gray-100:#f1f5f9;--gray-200:#e2e8f0;--gray-400:#94a3b8;--gray-600:#475569;--gray-800:#1e293b;--shadow:0 4px 16px rgba(0,0,0,.1);--shadow-lg:0 10px 40px rgba(0,0,0,.13);--r:14px;--rl:22px}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--gray-800);background:#fff;line-height:1.6}
+
+/* NAV */
+#nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--gray-200);transition:box-shadow .3s}
+#nav.sc{box-shadow:var(--shadow)}
+.ni{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:13px 24px}
+.nl{display:flex;align-items:center;gap:10px;text-decoration:none}
+.lic{width:40px;height:40px;background:var(--blue);border-radius:10px;display:flex;align-items:center;justify-content:center}
+.lic i{color:#fff;font-size:17px}
+.lt span:first-child{display:block;font-weight:800;font-size:15px;color:var(--blue-dark)}
+.lt span:last-child{display:block;font-size:11px;color:var(--gray-600)}
+.nls{display:flex;align-items:center;gap:26px;list-style:none}
+.nls a{text-decoration:none;color:var(--gray-600);font-size:14px;font-weight:500;transition:color .2s}
+.nls a:hover{color:var(--blue)}
+.nc{background:var(--blue);color:#fff;padding:9px 20px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:background .2s}
+.nc:hover{background:var(--blue-dark)}
+.hm{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hm span{width:23px;height:2px;background:var(--gray-800);border-radius:2px}
+.mm{display:none;flex-direction:column;background:#fff;padding:14px 24px 18px;border-top:1px solid var(--gray-200)}
+.mm a{padding:9px 0;text-decoration:none;color:var(--gray-800);font-size:15px;font-weight:500;border-bottom:1px solid var(--gray-100)}
+.mm.op{display:flex}
+
+/* HERO */
+#hero{min-height:100vh;background:linear-gradient(135deg,#0d3d7a 0%,#1a5fb4 45%,#1a8c7a 100%);display:flex;align-items:center;padding:100px 24px 60px;position:relative;overflow:hidden}
+#hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='30' cy='30' r='4' fill='%23fff' fill-opacity='.04'/%3E%3C/svg%3E")}
+.hi{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;position:relative}
+.hbadge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);color:#fff;padding:5px 13px;border-radius:50px;font-size:13px;font-weight:500;margin-bottom:18px}
+.hbadge i{color:#ffd700}
+.htitle{font-family:'Playfair Display',serif;font-size:clamp(34px,5vw,56px);color:#fff;line-height:1.15;margin-bottom:8px}
+.htitle span{color:#7ee8d0}
+.htagline{font-size:clamp(17px,2.5vw,23px);color:rgba(255,255,255,.85);font-weight:400;margin-bottom:16px}
+.hsub{font-size:15px;color:rgba(255,255,255,.7);max-width:420px;margin-bottom:34px}
+.hbtns{display:flex;gap:13px;flex-wrap:wrap}
+.bp{background:#fff;color:var(--blue-dark);padding:13px 26px;border-radius:10px;font-size:15px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;box-shadow:0 4px 20px rgba(0,0,0,.2);transition:transform .2s,box-shadow .2s}
+.bp:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.25)}
+.bo{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6);padding:12px 26px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:7px;transition:all .2s}
+.bo:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.hstats{display:flex;gap:26px;margin-top:38px;flex-wrap:wrap}
+.hst strong{display:block;font-size:26px;font-weight:800;color:#fff}
+.hst span{font-size:11px;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.5px}
+.hcard{background:rgba(255,255,255,.12);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.2);border-radius:24px;padding:26px;width:100%;max-width:370px}
+.hch{display:flex;align-items:center;gap:11px;margin-bottom:17px}
+.cav{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,#2ec4a4,#1a5fb4);display:flex;align-items:center;justify-content:center}
+.cav i{color:#fff;font-size:21px}
+.cin strong{color:#fff;display:block;font-size:14px;font-weight:700}
+.cin span{color:rgba(255,255,255,.7);font-size:12px}
+.sr{display:flex;gap:3px;align-items:center;margin-top:3px}
+.sr i{color:#ffd700;font-size:11px}
+.sr span{color:rgba(255,255,255,.75);font-size:11px;margin-left:3px}
+.spl{display:flex;flex-direction:column;gap:8px}
+.sp{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:9px;padding:8px 11px;display:flex;align-items:center;gap:9px}
+.spi{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.t{background:rgba(46,196,164,.25)}.b{background:rgba(255,255,255,.18)}
+.sp i{font-size:12px;color:#fff}.sp span{color:#fff;font-size:12px;font-weight:500}
+.ob{margin-top:13px;background:rgba(46,196,164,.2);border:1px solid rgba(46,196,164,.4);border-radius:8px;padding:8px 11px;display:flex;align-items:center;justify-content:space-between}
+.dot{width:7px;height:7px;border-radius:50%;background:#2ec4a4;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.ob span{color:rgba(255,255,255,.85);font-size:12px}.ob strong{color:#7ee8d0;font-size:11px}
+
+/* SECTIONS */
+section{padding:86px 24px}
+.ct{max-width:1200px;margin:0 auto}
+.sl{display:inline-block;background:var(--blue-light);color:var(--blue);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:5px 13px;border-radius:50px;margin-bottom:11px}
+.st{font-family:'Playfair Display',serif;font-size:clamp(27px,4vw,40px);color:var(--gray-800);line-height:1.2;margin-bottom:13px}
+.st span{color:var(--blue)}
+.ss{font-size:16px;color:var(--gray-600);max-width:550px;line-height:1.7}
+
+/* ABOUT */
+#about{background:var(--gray-50)}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.av{background:linear-gradient(135deg,var(--blue-light),var(--green-light));border-radius:var(--rl);height:390px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.av .bi{font-size:110px;color:var(--blue);opacity:.12}
+.fc{position:absolute;bottom:18px;left:18px;right:18px;background:#fff;border-radius:var(--r);padding:13px 16px;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:11px}
+.fci{width:38px;height:38px;background:var(--green-light);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.fci i{color:var(--green);font-size:17px}
+.fc strong{font-size:13px;font-weight:700;display:block}
+.fc span{font-size:12px;color:var(--gray-600)}
+.afs{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:24px}
+.af{background:#fff;border-radius:var(--r);padding:15px;border:1px solid var(--gray-200);transition:box-shadow .2s,transform .2s}
+.af:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.af i{font-size:19px;color:var(--blue);margin-bottom:6px}
+.af strong{display:block;font-size:13px;font-weight:700;margin-bottom:3px}
+.af span{font-size:12px;color:var(--gray-600)}
+
+/* SERVICES */
+#services{background:#fff}
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:17px;margin-top:44px}
+.sc{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--rl);padding:24px 18px;text-align:center;transition:all .25s;position:relative;overflow:hidden;cursor:default}
+.sc::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--blue),var(--green));opacity:0;transition:opacity .25s}
+.sc:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:transparent}
+.sc:hover::before{opacity:1}
+.sc *{position:relative}
+.sci{width:58px;height:58px;border-radius:13px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;margin:0 auto 13px;transition:background .25s}
+.sc:hover .sci{background:rgba(255,255,255,.2)}
+.sci i{font-size:23px;color:var(--blue);transition:color .25s}
+.sc:hover .sci i{color:#fff}
+.sc h3{font-size:14px;font-weight:700;margin-bottom:6px;transition:color .25s}
+.sc:hover h3{color:#fff}
+.sc p{font-size:12.5px;color:var(--gray-600);line-height:1.6;transition:color .25s}
+.sc:hover p{color:rgba(255,255,255,.85)}
+
+/* WHY */
+#why{background:linear-gradient(135deg,#0d3d7a,#1a5fb4)}
+#why .sl{background:rgba(255,255,255,.15);color:#fff}
+#why .st{color:#fff}
+#why .st span{color:#7ee8d0}
+#why .ss{color:rgba(255,255,255,.75)}
+.wg{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:17px;margin-top:44px}
+.wc{background:rgba(255,255,255,.1);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.15);border-radius:var(--rl);padding:24px 18px;transition:background .25s,transform .25s}
+.wc:hover{background:rgba(255,255,255,.17);transform:translateY(-4px)}
+.wn{font-size:34px;font-weight:800;color:rgba(255,255,255,.1);line-height:1;margin-bottom:9px}
+.wi{font-size:25px;color:#7ee8d0;margin-bottom:9px}
+.wc h3{font-size:15px;font-weight:700;color:#fff;margin-bottom:6px}
+.wc p{font-size:13px;color:rgba(255,255,255,.7);line-height:1.6}
+
+/* TESTIMONIALS */
+#testimonials{background:var(--gray-50)}
+.rg{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:17px;margin-top:44px}
+.rc{background:#fff;border-radius:var(--rl);padding:22px;box-shadow:0 1px 3px rgba(0,0,0,.08);border:1px solid var(--gray-200);transition:box-shadow .25s,transform .25s}
+.rc:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.rs{display:flex;gap:3px;margin-bottom:11px}
+.rs i{color:#f59e0b;font-size:13px}
+.rt{font-size:13.5px;color:var(--gray-600);line-height:1.7;margin-bottom:15px;font-style:italic}
+.rv{display:flex;align-items:center;gap:9px}
+.ra{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;color:#fff;flex-shrink:0}
+.rv strong{font-size:13px;font-weight:700}
+.rv span{font-size:11px;color:var(--gray-400)}
+.vf{display:inline-flex;align-items:center;gap:3px;font-size:11px;color:var(--green);font-weight:600;margin-top:2px}
+
+/* APPOINTMENT */
+#appointment{background:#fff}
+.apg{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+.apb{background:var(--gray-50);border-radius:var(--rl);padding:32px;border:1px solid var(--gray-200)}
+.apb h3{font-size:20px;font-weight:700;margin-bottom:4px}
+.apb .sub{font-size:13px;color:var(--gray-600);margin-bottom:20px}
+.fg{margin-bottom:13px}
+.fg label{display:block;font-size:12px;font-weight:600;margin-bottom:4px;color:var(--gray-700);text-transform:uppercase;letter-spacing:.4px}
+.fg input,.fg textarea,.fg select{width:100%;padding:10px 12px;border:1.5px solid var(--gray-200);border-radius:8px;font-size:14px;font-family:inherit;background:#fff;outline:none;transition:border-color .2s,box-shadow .2s;color:var(--gray-800)}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,95,180,.1)}
+.fg textarea{height:88px;resize:vertical}
+.bsub{width:100%;background:var(--blue);color:#fff;border:none;padding:12px;border-radius:8px;font-size:15px;font-weight:700;cursor:pointer;transition:background .2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.bsub:hover{background:var(--blue-dark)}
+.wab{display:flex;align-items:center;justify-content:center;gap:8px;background:#25d366;color:#fff;text-decoration:none;padding:12px;border-radius:8px;font-size:15px;font-weight:700;margin-top:9px;transition:background .2s}
+.wab:hover{background:#1ebe5a}
+.api{display:flex;flex-direction:column;gap:16px}
+.aic{background:var(--blue-light);border-radius:var(--r);padding:17px 19px;display:flex;gap:13px;align-items:flex-start}
+.aii{width:40px;height:40px;border-radius:8px;background:var(--blue);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.aii i{color:#fff;font-size:16px}
+.aic strong{display:block;font-size:13px;font-weight:700;margin-bottom:3px}
+.aic p{font-size:13px;color:var(--gray-600)}
+.ts{display:flex;flex-wrap:wrap;gap:6px;margin-top:5px}
+.ts span{background:#fff;border:1px solid var(--blue);color:var(--blue);font-size:11px;font-weight:600;padding:3px 8px;border-radius:5px}
+
+/* MAP */
+#map{padding:0}
+.mb{background:#fff;max-width:1200px;margin:0 auto;padding:20px 24px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:11px}
+.mb h3{font-size:18px;font-weight:700}
+.mb p{font-size:13px;color:var(--gray-600)}
+.mb a{background:var(--blue);color:#fff;padding:9px 17px;border-radius:7px;text-decoration:none;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+iframe.gm{width:100%;height:350px;border:none;display:block}
+
+/* CONTACT */
+#contact{background:var(--gray-50)}
+.cng{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:17px;margin-top:44px}
+.cnc{background:#fff;border-radius:var(--rl);padding:24px 18px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.08);border:1px solid var(--gray-200);transition:box-shadow .2s,transform .2s}
+.cnc:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.cni{width:50px;height:50px;border-radius:12px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;margin:0 auto 11px}
+.cni i{font-size:19px;color:var(--blue)}
+.cnc h4{font-size:14px;font-weight:700;margin-bottom:5px}
+.cnc p,.cnc a{font-size:13px;color:var(--gray-600);text-decoration:none;line-height:1.6}
+.cnc a:hover{color:var(--blue)}
+
+/* FOOTER */
+footer{background:var(--gray-800);color:rgba(255,255,255,.7);padding:38px 24px 20px}
+.fi2{max-width:1200px;margin:0 auto}
+.ft{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:28px;margin-bottom:28px}
+.fb p{font-size:13px;margin-top:9px;max-width:265px;line-height:1.6}
+.fl h5{color:#fff;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:9px}
+.fl ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+.fl a{color:rgba(255,255,255,.55);text-decoration:none;font-size:13px;transition:color .2s}
+.fl a:hover{color:#fff}
+.fbot{border-top:1px solid rgba(255,255,255,.1);padding-top:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:7px}
+.fbot p{font-size:12px}
+.db{background:rgba(255,200,0,.14);border:1px solid rgba(255,200,0,.3);color:#ffd700;font-size:11px;font-weight:600;padding:4px 10px;border-radius:50px}
+
+/* FLOAT */
+.fwa{position:fixed;bottom:24px;right:24px;z-index:999;width:52px;height:52px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 14px rgba(37,211,102,.4);transition:transform .2s}
+.fwa:hover{transform:scale(1.1)}
+.fwa i{color:#fff;font-size:25px}
+.fwt{position:absolute;right:60px;top:50%;transform:translateY(-50%);background:var(--gray-800);color:#fff;font-size:12px;font-weight:600;padding:5px 9px;border-radius:7px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
+.fwa:hover .fwt{opacity:1}
+#btt{position:fixed;bottom:24px;left:24px;z-index:999;width:40px;height:40px;background:var(--blue);border-radius:8px;display:none;align-items:center;justify-content:center;cursor:pointer;border:none;box-shadow:var(--shadow)}
+#btt.sh{display:flex}
+#btt i{color:#fff;font-size:14px}
+
+/* ANIM */
+.fu{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.fu.vi{opacity:1;transform:translateY(0)}
+
+@media(max-width:900px){.hi{grid-template-columns:1fr}.hv{display:none}.ag,.apg{grid-template-columns:1fr}}
+@media(max-width:670px){.nls,.nc{display:none}.hm{display:flex}section{padding:58px 16px}.afs{grid-template-columns:1fr}.ft{flex-direction:column}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="ni">
+    <a href="#hero" class="nl">
+      <div class="lic"><i class="fa-solid fa-tooth"></i></div>
+      <div class="lt"><span>Vashisht Dental Clinic</span><span>Badarpur, New Delhi</span></div>
+    </a>
+    <ul class="nls">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#appointment" class="nc">Book Appointment</a>
+    <button class="hm" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mm" id="mm">
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#services" onclick="toggleMenu()">Services</a>
+    <a href="#why" onclick="toggleMenu()">Why Us</a>
+    <a href="#testimonials" onclick="toggleMenu()">Reviews</a>
+    <a href="#appointment" onclick="toggleMenu()">Book Appointment</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hi">
+    <div>
+      <div class="hbadge"><i class="fa-solid fa-star"></i> Trusted Dental Care in New Delhi</div>
+      <h1 class="htitle">Vashisht<br><span>Dental Clinic</span></h1>
+      <p class="htagline">Your Smile, Our Priority</p>
+      <p class="hsub">Gentle, affordable and modern dental care for families across Badarpur and South Delhi. Your healthy smile is just one visit away.</p>
+      <div class="hbtns">
+        <a href="#appointment" class="bp"><i class="fa-solid fa-calendar-check"></i> Book Appointment</a>
+        <a href="tel:+918447194471" class="bo"><i class="fa-solid fa-phone"></i> Call Now</a>
+      </div>
+      <div class="hstats">
+        <div class="hst"><strong>2000+</strong><span>Happy Patients</span></div>
+        <div class="hst"><strong>10+</strong><span>Years Experience</span></div>
+        <div class="hst"><strong>5★</strong><span>Google Rating</span></div>
+      </div>
+    </div>
+    <div class="hv" style="display:flex;justify-content:center;">
+      <div class="hcard">
+        <div class="hch">
+          <div class="cav"><i class="fa-solid fa-tooth"></i></div>
+          <div class="cin">
+            <strong>Vashisht Dental Clinic</strong>
+            <span>Badarpur, New Delhi</span>
+            <div class="sr"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>5.0 · 200+ reviews</span></div>
+          </div>
+        </div>
+        <div class="spl">
+          <div class="sp"><div class="spi t"><i class="fa-solid fa-teeth-open"></i></div><span>Teeth Cleaning &amp; Whitening</span></div>
+          <div class="sp"><div class="spi b"><i class="fa-solid fa-tooth"></i></div><span>Root Canal Treatment</span></div>
+          <div class="sp"><div class="spi t"><i class="fa-solid fa-screwdriver-wrench"></i></div><span>Dental Implants</span></div>
+          <div class="sp"><div class="spi b"><i class="fa-solid fa-star"></i></div><span>Cosmetic Dentistry</span></div>
+        </div>
+        <div class="ob">
+          <div style="display:flex;align-items:center;gap:6px;"><div class="dot"></div><span>Open Daily · Closes 10 PM</span></div>
+          <strong>+91 84471 94471</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="ct">
+    <div class="ag">
+      <div class="fu">
+        <div class="av">
+          <i class="fa-solid fa-tooth bi"></i>
+          <div class="fc">
+            <div class="fci"><i class="fa-solid fa-shield-halved"></i></div>
+            <div><strong>100% Safe &amp; Hygienic</strong><span>Sterilized instruments, disposable gloves, medical-grade tools</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="fu">
+        <div class="sl">About Us</div>
+        <h2 class="st">Caring for Your <span>Oral Health</span> Like Family</h2>
+        <p class="ss" style="margin-bottom:14px;">At Vashisht Dental Clinic, we combine cutting-edge dental technology with a warm, patient-first approach. Located at Main Molarband Road, Badarpur, we've been serving families across South Delhi with compassionate and affordable care.</p>
+        <p class="ss">Whether it's a routine check-up, a root canal, or a smile makeover — our experienced team ensures you feel comfortable, informed and cared for at every step.</p>
+        <div class="afs">
+          <div class="af"><i class="fa-solid fa-user-doctor"></i><strong>Experienced Dentist</strong><span>10+ years of expertise in Delhi</span></div>
+          <div class="af"><i class="fa-solid fa-microscope"></i><strong>Modern Equipment</strong><span>Digital X-rays &amp; painless tools</span></div>
+          <div class="af"><i class="fa-solid fa-hand-holding-heart"></i><strong>Gentle Treatment</strong><span>Pain-free procedures for all ages</span></div>
+          <div class="af"><i class="fa-solid fa-indian-rupee-sign"></i><strong>Affordable Care</strong><span>Transparent pricing, no hidden fees</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="ct">
+    <div style="text-align:center;" class="fu">
+      <div class="sl">Our Services</div>
+      <h2 class="st">Complete Dental <span>Care</span> Under One Roof</h2>
+      <p class="ss" style="margin:0 auto;">From routine cleanings to complex treatments — full-range dental services with latest technology and highest care standards.</p>
+    </div>
+    <div class="sg">
+      <div class="sc fu"><div class="sci"><i class="fa-solid fa-teeth-open"></i></div><h3>Teeth Cleaning</h3><p>Professional scaling, polishing and plaque removal for a brighter, healthier smile. Recommended every 6 months.</p></div>
+      <div class="sc fu"><div class="sci"><i class="fa-solid fa-tooth"></i></div><h3>Root Canal Treatment</h3><p>Pain-free RCT using advanced rotary endodontics. Save infected teeth quickly, comfortably and durably.</p></div>
+      <div class="sc fu"><div class="sci"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3>Dental Implants</h3><p>Permanent, natural-looking tooth replacements using titanium implants for a confident, complete smile.</p></div>
+      <div class="sc fu"><div class="sci"><i class="fa-solid fa-align-center"></i></div><h3>Braces / Orthodontics</h3><p>Metal braces, ceramic braces &amp; clear aligners for children, teens, and adults across all ages.</p></div>
+      <div class="sc fu"><div class="sci"><i class="fa-solid fa-star"></i></div><h3>Cosmetic Dentistry</h3><p>Smile makeovers, veneers, whitening &amp; bonding to transform your smile's beauty and confidence.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="ct">
+    <div class="fu">
+      <div class="sl">Why Choose Us</div>
+      <h2 class="st">Why Patients <span>Trust Us</span></h2>
+      <p class="ss">We're not just a dental clinic — we're your long-term oral health partners. Here's what sets Vashisht Dental Clinic apart.</p>
+    </div>
+    <div class="wg">
+      <div class="wc fu"><div class="wn">01</div><div class="wi"><i class="fa-solid fa-user-doctor"></i></div><h3>Experienced Doctor</h3><p>10+ years of clinical expertise in general, cosmetic &amp; surgical dentistry, backed by thousands of satisfied patients in Delhi.</p></div>
+      <div class="wc fu"><div class="wn">02</div><div class="wi"><i class="fa-solid fa-indian-rupee-sign"></i></div><h3>Affordable Pricing</h3><p>Honest, transparent pricing with zero hidden costs. Quality dental care accessible to every family in South Delhi.</p></div>
+      <div class="wc fu"><div class="wn">03</div><div class="wi"><i class="fa-solid fa-microscope"></i></div><h3>Modern Equipment</h3><p>Digital X-rays, painless injection systems, rotary RCT tools, and infection-control protocols meeting highest safety standards.</p></div>
+      <div class="wc fu"><div class="wn">04</div><div class="wi"><i class="fa-solid fa-heart"></i></div><h3>Friendly Environment</h3><p>A calm, welcoming clinic designed to ease dental anxiety. Our team treats every patient like family — kids to seniors.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="ct">
+    <div style="text-align:center;" class="fu">
+      <div class="sl">Patient Reviews</div>
+      <h2 class="st">What Our <span>Patients Say</span></h2>
+      <p class="ss" style="margin:0 auto;">Real stories from real patients across South Delhi who trusted us with their smiles.</p>
+    </div>
+    <div class="rg">
+      <div class="rc fu">
+        <div class="rs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="rt">"Bahut hi achhi jagah hai. Mera root canal bilkul painless tha. Doctor sahab ne pehle sab explain kiya aur koi takleef nahi hui. Ab puri family yahan aati hai. Highly recommended for Badarpur!"</p>
+        <div class="rv"><div class="ra" style="background:linear-gradient(135deg,#1a5fb4,#2ec4a4);">R</div><div><strong>Rajesh Kumar Sharma</strong><span>Badarpur, New Delhi</span><div class="vf"><i class="fa-solid fa-circle-check"></i> Verified Patient</div></div></div>
+      </div>
+      <div class="rc fu">
+        <div class="rs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="rt">"My daughter was very scared of dentists but the doctor was so patient and gentle with her. Braces treatment going great for 6 months now. Clinic is very clean and fees are very reasonable."</p>
+        <div class="rv"><div class="ra" style="background:linear-gradient(135deg,#e879f9,#a855f7);">P</div><div><strong>Priya Agarwal</strong><span>Molarband Extension, Delhi</span><div class="vf"><i class="fa-solid fa-circle-check"></i> Verified Patient</div></div></div>
+      </div>
+      <div class="rc fu">
+        <div class="rs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="rt">"Got my dental implant 8 months ago. Result is perfect — looks and feels like a real tooth. Doctor ka kaam ek dum first class hai. Bahut khush hun. Will come back for whitening too!"</p>
+        <div class="rv"><div class="ra" style="background:linear-gradient(135deg,#f59e0b,#ef4444);">A</div><div><strong>Amit Singh Chauhan</strong><span>Sangam Vihar, New Delhi</span><div class="vf"><i class="fa-solid fa-circle-check"></i> Verified Patient</div></div></div>
+      </div>
+      <div class="rc fu">
+        <div class="rs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="rt">"Best dental clinic in Badarpur! Had severe toothache at night, they attended me quickly. Clinic is spotlessly clean, staff very friendly and charges very affordable for middle-class families."</p>
+        <div class="rv"><div class="ra" style="background:linear-gradient(135deg,#10b981,#065f46);">S</div><div><strong>Sunita Devi Yadav</strong><span>Tughlakabad, New Delhi</span><div class="vf"><i class="fa-solid fa-circle-check"></i> Verified Patient</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="appointment">
+  <div class="ct">
+    <div style="text-align:center;margin-bottom:44px;" class="fu">
+      <div class="sl">Book Now</div>
+      <h2 class="st">Schedule Your <span>Appointment</span></h2>
+      <p class="ss" style="margin:0 auto;">Book online or reach out via WhatsApp for quick confirmation. Available daily till 10 PM.</p>
+    </div>
+    <div class="apg">
+      <div class="apb fu">
+        <h3>Request an Appointment</h3>
+        <p class="sub">Fill in your details and we'll confirm your slot shortly.</p>
+        <div class="fg"><label>Full Name *</label><input type="text" placeholder="e.g. Rahul Sharma" id="fn"/></div>
+        <div class="fg"><label>Phone Number *</label><input type="tel" placeholder="+91 98765 43210" id="ph"/></div>
+        <div class="fg"><label>Service Required</label><select id="sv"><option value="">Select a service</option><option>Teeth Cleaning</option><option>Root Canal Treatment</option><option>Dental Implants</option><option>Braces / Orthodontics</option><option>Cosmetic Dentistry</option><option>General Check-up</option></select></div>
+        <div class="fg"><label>Message / Symptoms</label><textarea placeholder="Briefly describe your concern or preferred time..." id="mg"></textarea></div>
+        <button class="bsub" onclick="handleBook()"><i class="fa-solid fa-calendar-check"></i> Confirm Appointment</button>
+        <a href="https://wa.me/918447194471?text=Hello%20Doctor%2C%20I%20want%20to%20book%20an%20appointment%20at%20Vashisht%20Dental%20Clinic." target="_blank" class="wab"><i class="fa-brands fa-whatsapp" style="font-size:18px;"></i> Book via WhatsApp</a>
+      </div>
+      <div class="api fu">
+        <div class="aic"><div class="aii"><i class="fa-solid fa-location-dot"></i></div><div><strong>Our Address</strong><p>B-6, Main Molarband Road, Aggarwal Market,<br>Molarband, Badarpur, New Delhi – 110044</p></div></div>
+        <div class="aic"><div class="aii"><i class="fa-solid fa-clock"></i></div><div><strong>Clinic Timings</strong><p style="margin-bottom:5px;">Open Daily – Monday to Sunday</p><div class="ts"><span>Opens: 10:00 AM</span><span>Closes: 10:00 PM</span></div></div></div>
+        <div class="aic"><div class="aii"><i class="fa-solid fa-phone"></i></div><div><strong>Call / WhatsApp</strong><p><a href="tel:+918447194471" style="color:var(--blue);font-weight:700;text-decoration:none;">+91 84471 94471</a><br>Available daily till 10:00 PM</p></div></div>
+        <div class="aic" style="background:var(--green-light);"><div class="aii" style="background:var(--green);"><i class="fa-solid fa-shield-halved"></i></div><div><strong>Safety &amp; Hygiene</strong><p>Sterilized instruments · Disposable gloves · Sanitized before every patient</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="map">
+  <div class="mb">
+    <div><h3>Find Us in Badarpur, New Delhi</h3><p>B-6, Main Molarband Road, Aggarwal Market, Molarband, Badarpur, New Delhi – 110044</p></div>
+    <a href="https://maps.google.com/?q=Molarband+Badarpur+New+Delhi" target="_blank"><i class="fa-solid fa-map-pin"></i> Open in Google Maps</a>
+  </div>
+  <iframe class="gm" src="https://maps.google.com/maps?q=Molarband+Extension+Badarpur+New+Delhi+110044&output=embed&z=15" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<section id="contact">
+  <div class="ct">
+    <div style="text-align:center;" class="fu">
+      <div class="sl">Contact Us</div>
+      <h2 class="st">Get in <span>Touch</span></h2>
+      <p class="ss" style="margin:0 auto;">Reach us by phone, WhatsApp, or visit us directly in Badarpur, New Delhi.</p>
+    </div>
+    <div class="cng">
+      <div class="cnc fu"><div class="cni"><i class="fa-solid fa-phone"></i></div><h4>Phone / WhatsApp</h4><p><a href="tel:+918447194471">+91 84471 94471</a></p><p style="margin-top:4px;font-size:11px;color:#94a3b8;">Call or WhatsApp anytime</p></div>
+      <div class="cnc fu"><div class="cni"><i class="fa-solid fa-location-dot"></i></div><h4>Address</h4><p>B-6, Main Molarband Road,<br>Aggarwal Market, Molarband,<br>Badarpur, New Delhi – 110044</p></div>
+      <div class="cnc fu"><div class="cni"><i class="fa-solid fa-clock"></i></div><h4>Clinic Timings</h4><p>Open Daily<br>Monday – Sunday<br><strong style="color:var(--green);">Closes at 10:00 PM</strong></p></div>
+      <div class="cnc fu"><div class="cni"><i class="fa-brands fa-whatsapp"></i></div><h4>Quick Booking</h4><p style="margin-bottom:9px;">Chat on WhatsApp for fastest confirmation</p><a href="https://wa.me/918447194471" target="_blank" style="background:#25d366;color:#fff;padding:7px 13px;border-radius:7px;font-size:12px;font-weight:600;text-decoration:none;display:inline-block;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Now</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fi2">
+    <div class="ft">
+      <div class="fb">
+        <a href="#hero" class="nl" style="margin-bottom:7px;">
+          <div class="lic"><i class="fa-solid fa-tooth"></i></div>
+          <div class="lt"><span style="color:#fff;">Vashisht Dental Clinic</span><span style="color:rgba(255,255,255,.42);">Badarpur, New Delhi</span></div>
+        </a>
+        <p>Providing compassionate, affordable &amp; modern dental care to families in Badarpur and South Delhi. Your smile is our mission.</p>
+      </div>
+      <div class="fl"><h5>Services</h5><ul><li><a href="#services">Teeth Cleaning</a></li><li><a href="#services">Root Canal Treatment</a></li><li><a href="#services">Dental Implants</a></li><li><a href="#services">Braces / Orthodontics</a></li><li><a href="#services">Cosmetic Dentistry</a></li></ul></div>
+      <div class="fl"><h5>Quick Links</h5><ul><li><a href="#about">About Us</a></li><li><a href="#why">Why Choose Us</a></li><li><a href="#testimonials">Patient Reviews</a></li><li><a href="#appointment">Book Appointment</a></li><li><a href="#contact">Contact Us</a></li></ul></div>
+      <div class="fl"><h5>Contact</h5><ul><li><a href="tel:+918447194471"><i class="fa-solid fa-phone" style="margin-right:5px;"></i>+91 84471 94471</a></li><li><a href="https://wa.me/918447194471" target="_blank"><i class="fa-brands fa-whatsapp" style="margin-right:5px;"></i>WhatsApp</a></li><li><a href="#map"><i class="fa-solid fa-map-pin" style="margin-right:5px;"></i>Badarpur, New Delhi</a></li></ul></div>
+    </div>
+    <div class="fbot">
+      <p>© 2025 Vashisht Dental Clinic, Badarpur, New Delhi. All rights reserved.</p>
+      <div style="display:flex;gap:7px;flex-wrap:wrap;"><span class="db">⚠ Demo Website – Created by Haarish</span><span class="db">📋 Demo Preview – Not Official Website</span></div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/918447194471?text=Hello%20Doctor%2C%20I%20want%20to%20book%20an%20appointment." target="_blank" class="fwa">
+  <span class="fwt">Book on WhatsApp</span>
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script>
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('sc',window.scrollY>20);
+  document.getElementById('btt').classList.toggle('sh',window.scrollY>400);
+});
+function toggleMenu(){document.getElementById('mm').classList.toggle('op');}
+const ob=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vi');}),{threshold:.1});
+document.querySelectorAll('.fu').forEach(el=>ob.observe(el));
+function handleBook(){
+  const n=document.getElementById('fn').value.trim();
+  const p=document.getElementById('ph').value.trim();
+  if(!n||!p){alert('Please enter your name and phone number.');return;}
+  const s=document.getElementById('sv').value||'General Check-up';
+  const m=document.getElementById('mg').value;
+  const msg=encodeURIComponent(`Hello Doctor, I'd like to book an appointment.\n\nName: ${n}\nPhone: ${p}\nService: ${s}\nMessage: ${m}`);
+  window.open(`https://wa.me/918447194471?text=${msg}`,'_blank');
+}
+</script>
+</body>
+</html>
